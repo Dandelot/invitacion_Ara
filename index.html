@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación de Cumpleaños</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+
+</head>
+
+<body>
+
+      <!-- Sección 1: Introducción con cuenta regresiva -->
+
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="/assets/Logo_animation.json" speed="1" style="width: 450px; height: 450px" mode="normal" loop autoplay></dotlottie-wc>
+      
+      <div class="frame1">
+        <img src="assets/patin@4x.webp" alt="patin" class="patin">
+        <img src="assets/cassete@4x.webp" alt="cassete" class="casete">
+        <h1>¡Estás Invitado! a mi fiesta</h1>
+        <p>Te esperamos para celebrar un día muy especial🥳, lleno de alegría y momentos inolvidables, el próximo... </p>
+        <h2  >
+          20 de septiembre de 2025
+        </h2>
+      </div>
+  
+      <!-- Sección 2: Dirección con mapa -->
+      
+      <div class="frame2">
+        <h2  >
+          Faltan
+        </h2>
+        <div class="countdown" id="countdown">
+          Cargando cuenta regresiva...
+        </div>
+        
+        <div style="margin-top: 12%;">
+        <h2>¿Dónde será?</h2>
+       <p>Esperamos contar con su presencia en la ceremonia religiosa en  <br><br> <strong>el convento de las capuchinas en mavoro que será a las 3 pm. </strong></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2656.0531660342135!2d-99.80853443397217!3d19.70296937812095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d25de0991e165d%3A0xde73d9c705a669d1!2sClarisas%20Capuchinas%20monasterio%20San%20Jos%C3%A9!5e0!3m2!1ses-419!2smx!4v1752446839813!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <p>Posteriormente la fiesta de celebración será en el <br><br> <strong>salón Diamante en Calle Josefa Ortiz de Domínguez, Lic. Primo de Verdad 305, Jocotitlán Edo. Mex. </strong></p>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d234.7515920923062!2d-99.7891075!3d19.7115396!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d25d8ba9a0aa8f%3A0x9412d51e014772cc!2sHotel%20Real%20Diamante!5e0!3m2!1ses-419!2smx!4v1752445567709!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          loading="lazy">
+        </iframe>
+        </div>
+      
+      </div>
+  
+      <!-- Sección 3: Dress Code -->
+      <div  class="frame1">
+         <img src="assets/Bola_Disco@4x.webp" alt="bola disco" class="bola_disco">
+        <h2 style="margin-top: 55px ; ">Dress Code</h2>
+        <h3 style="margin-top: -20px ; ">(atuendo)</h3>
+        <div class="dress-code">
+         <strong><h3  style="margin-top: -2px ;  line-height: 18px;">¡Prepárate para viajar al pasado!</h3></strong> .<br>
+          <p  style="margin-top: -24px ;" >Queremos ver neón a full, mezclilla sin miedo, peinados altos y looks que digan</p><br>
+          <strong><h2 style="margin-top: -45px ; font-size: 18px;">“¡soy la onda!”</h2></strong>
+        </div>
+        <div class="galeria">
+           <img src="assets/foto_1.jpg" alt="atuendo_mujer1"  style="width: 45%; border-radius: 10px;">
+           <img src="assets/foto_2.jpg" alt="atuendo_mujer2"  style="width: 45%; border-radius: 10px;">
+           <img src="assets/foto_3.jpg" alt="atuendo_mujer2"  style="width: 45%; border-radius: 10px;">
+           <img src="assets/foto_4.jpg" alt="atuendo_mujer2"  style="width: 45%; border-radius: 10px;">
+        </div>
+        <p  style="margin-top: 16px ;" >Ponte tus mejores lentejuelas, calentadores, hombreras o chaquetas brillantes y prepárate para</p><br>
+        <strong><h2 style="font-size: 18px; margin-top: -15px;">una noche padrísima.</h2></strong>
+      </div>
+  
+      <!-- Sección 4: formato de asistencia -->
+      
+       <div class="form-container">
+         <h2>Confirmación de Asistencia</h2>
+         <form action="https://api.web3forms.com/submit" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="hidden" name="access_key" value="986e28b6-bdff-4ee9-a153-b538af283b8c">
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+           <label>¿Asistirás?</label>
+             <div class="radio-group">
+              
+               <label><input type="radio" name="asistencia" value="si asistiré" required> Sí voy</label>
+               <label><input type="radio" name="asistencia" value="no asistiré" style="margin-top: -250px;"> No podré asistir</label>
+             </div>
+
+             <label for="mensaje">Mensaje (opcional)</label>
+             <textarea id="mensaje" name="mensaje" placeholder="Escribe un mensaje si lo deseas..."></textarea>
+
+           <button type="submit">Enviar</button>
+          </form>
+       </div>
+      
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.13.0/lottie.min.js"></script>
+    </body>
+
+</html>
